@@ -1,14 +1,19 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import React from "react";
+import ReactDOM from "react-dom";
+import { HashRouter as Router } from "react-router-dom";
+
+import Root from "./components/Root";
+import * as serviceWorker from "./serviceWorker";
+import "antd/dist/antd.css";
+import "bootstrap/dist/css/bootstrap.css";
+import "tachyons";
+import "react-tabs/style/react-tabs.css";
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+  <Router>
+    <Root />
+  </Router>,
+  document.getElementById("root")
 );
 
 // If you want your app to work offline and load faster, you can change
